@@ -1,0 +1,83 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Containers */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Elements */
+
+body > h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.daysEl,
+.hoursEl,
+.minutesEl,
+.secondsEl {
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.daysEl p,
+.hoursEl p,
+.minutesEl p,
+.secondsEl p {
+  margin: 1.5rem 0 0.5rem 0;
+  font-weight: bold;
+}
+
+/* Bars */
+
+.daysBar,
+.hoursBar,
+.minutesBar,
+.secondsBar {
+  width: 100%;
+  height: 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.daysBar {
+  background: #ff5f6d;
+  background: -webkit-linear-gradient(to left, #ffc371, #ff5f6d);
+  background: linear-gradient(to left, #ffc371, #ff5f6d);
+}
+
+.hoursBar {
+  background-color: #183dff;
+}
+
+.minutesBar {
+  background-color: #183dff;
+}
+
+.secondsBar {
+  background-color: #183dff;
+}
